@@ -121,6 +121,9 @@ app.use((req, res, next) => {
 });
 
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");  // Home pe aane wale ko listings page pe bhej do
+});
 
 
 app.use("/listings",listingRouter);
